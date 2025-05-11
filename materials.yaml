@@ -1,0 +1,29 @@
+materials:
+  graphene:
+    label: Graphene
+    category: carbon
+    λ: 5000
+    ρ: 2200
+    temp_max: 4000
+    toxicity: low
+    cost: 250
+    tags: [aerospace, 2D, high_temp]
+  material_002:
+    label: Engineered Material 002
+    category: ceramic
+    λ: 1.5
+    ρ: 2500
+    temp_max: 1500
+    toxicity: low
+    cost: 50
+    tags: [insulation, high_temp]
+  # ... (97 more materials with similar structure)
+  material_100:
+    label: Engineered Material 100
+    category: polymer
+    λ: 0.2
+    ρ: 1200
+    temp_max: 350
+    toxicity: moderate
+    cost: 20
+    tags: [lightweight, flexible]
