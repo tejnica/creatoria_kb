@@ -1,0 +1,485 @@
+```yaml
+# processes.yaml
+# This file contains a list of manufacturing processes with their characteristics.
+
+- name: abrasive_machining
+  label: "Абразивная обработка"
+  category: mechanical
+  temp_range: [293, 373] # Kelvin
+  toxicity: low
+  energy_consumption: 1.5 # kWh/kg
+  tags:
+    - шлифование
+    - полирование
+    - хонингование
+    - резка
+    - отделка_поверхности
+    - mechanical_finishing
+
+- name: leaching
+  label: "Выщелачивание"
+  category: chemical
+  temp_range: [293, 373] # Kelvin
+  toxicity: moderate
+  energy_consumption: 2.0 # kWh/kg
+  tags:
+    - гидрометаллургия
+    - извлечение_металлов
+    - химическая_обработка
+    - chemical_processing
+    - mining
+
+- name: mining
+  label: "Горное дело"
+  category: mechanical
+  temp_range: [273, 323] # Kelvin
+  toxicity: moderate
+  energy_consumption: 5.0 # kWh/kg
+  tags:
+    - добыча_полезных_ископаемых
+    - экскавация
+    - бурение
+    - взрывные_работы
+    - обогащение_руд
+    - сырье
+    - extraction
+    - excavation
+    - drilling
+    - blasting
+    - mineral_processing
+    - raw_material
+
+- name: grinding_milling
+  label: "Измельчение (дробление/помол)"
+  category: mechanical
+  temp_range: [293, 473] # Kelvin
+  toxicity: low
+  energy_consumption: 3.0 # kWh/kg
+  tags:
+    - дробление
+    - помол
+    - подготовка_сырья
+    - уменьшение_размера_частиц
+    - обогащение_полезных_ископаемых
+    - comminution
+    - size_reduction
+    - material_preparation
+    - mineral_processing
+
+- name: laser_cutting
+  label: "Лазерная резка"
+  category: thermal
+  temp_range: [3000, 20000] # Kelvin
+  toxicity: moderate
+  energy_consumption: 0.5 # kWh/kg
+  tags:
+    - резка_металла
+    - обработка_материалов
+    - высокая_точность
+    - автоматизация
+    - листовая_обработка
+    - thermal_cutting
+    - precision_machining
+    - sheet_metal_processing
+
+- name: injection_molding
+  label: "Литье под давлением"
+  category: mechanical
+  temp_range: [150, 400] # Celsius, for plastics/metals
+  toxicity: moderate
+  energy_consumption: 4.0 # kWh/kg
+  tags:
+    - формование
+    - пластик
+    - металл
+    - производство_деталей
+    - высокое_давление
+    - manufacturing
+    - plastic_parts
+    - metal_parts
+    - high_volume_production
+
+- name: forging
+  label: "Ковка"
+  category: mechanical
+  temp_range: [800, 1250] # Celsius, for metal heating
+  toxicity: low
+  energy_consumption: 2.5 # kWh/kg
+  tags:
+    - обработка_металлов_давлением
+    - деформация
+    - формирование_деталей
+    - машиностроение
+    - metal_forming
+    - deformation
+    - shaping
+    - manufacturing
+    - engineering
+
+- name: welding
+  label: "Сварка"
+  category: thermal
+  temp_range: [1000, 20000] # Celsius, arc/flame temperature
+  toxicity: moderate
+  energy_consumption: 1.0 # kWh/kg
+  tags:
+    - соединение_металлов
+    - изготовление_конструкций
+    - ремонт
+    - металлообработка
+    - joining
+    - fabrication
+    - repair
+    - metalworking
+    - arc_welding
+    - gas_welding
+    - resistance_welding
+
+- name: heat_treatment
+  label: "Термическая обработка"
+  category: thermal
+  temp_range: [500, 1300] # Celsius, depends on metal/alloy and treatment type
+  toxicity: low
+  energy_consumption: 3.5 # kWh/kg
+  tags:
+    - отжиг
+    - закалка
+    - отпуск
+    - нормализация
+    - улучшение_свойств_металла
+    - annealing
+    - quenching
+    - tempering
+    - normalization
+    - metal_properties_improvement
+
+- name: electroplating
+  label: "Гальванопластика"
+  category: chemical
+  temp_range: [20, 80] # Celsius, electrolyte temperature
+  toxicity: high
+  energy_consumption: 0.8 # kWh/m^2
+  tags:
+    - нанесение_покрытий
+    - защита_от_коррозии
+    - декоративная_отделка
+    - электрохимия
+    - surface_coating
+    - corrosion_protection
+    - decorative_finishing
+    - electrochemistry
+
+- name: anodizing
+  label: "Анодирование"
+  category: chemical
+  temp_range: [20, 40] # Celsius, electrolyte temperature
+  toxicity: moderate
+  energy_consumption: 1.2 # kWh/m^2
+  tags:
+    - защитное_покрытие
+    - декоративное_покрытие
+    - оксидирование
+    - алюминий
+    - титан
+    - surface_treatment
+    - protective_coating
+    - decorative_coating
+    - oxidation
+    - aluminum_alloys
+    - titanium_alloys
+
+- name: extrusion
+  label: "Экструзия"
+  category: mechanical
+  temp_range: [300, 700] # Celsius, depends on material
+  toxicity: low
+  energy_consumption: 2.0 # kWh/kg
+  tags:
+    - формование
+    - профили
+    - трубы
+    - пластик
+    - металл
+    - continuous_process
+    - shaping
+    - profiles
+    - pipes
+    - plastics
+    - metals
+
+- name: rolling
+  label: "Прокатка"
+  category: mechanical
+  temp_range: [300, 1500] # Celsius, hot and cold rolling
+  toxicity: low
+  energy_consumption: 1.8 # kWh/kg
+  tags:
+    - металлообработка
+    - листовой_металл
+    - сортовой_прокат
+    - деформация
+    - metal_forming
+    - sheet_metal
+    - long_products
+    - deformation
+
+- name: drawing
+  label: "Волочение"
+  category: mechanical
+  temp_range: [20, 230] # Celsius, cold or warm drawing
+  toxicity: low
+  energy_consumption: 1.5 # kWh/kg
+  tags:
+    - проволока
+    - прутки
+    - трубы
+    - уменьшение_сечения
+    - metal_forming
+    - wire
+    - rod
+    - tube
+    - cross_section_reduction
+
+- name: stamping
+  label: "Штамповка"
+  category: mechanical
+  temp_range: [20, 800] # Celsius, cold and hot stamping
+  toxicity: low
+  energy_consumption: 1.2 # kWh/kg
+  tags:
+    - листовая_штамповка
+    - объемная_штамповка
+    - формоизменение
+    - metal_forming
+    - sheet_metal_forming
+    - bulk_forming
+    - shaping
+
+- name: powder_metallurgy
+  label: "Порошковая металлургия"
+  category: hybrid
+  temp_range: [1000, 1600] # Celsius, sintering temperature
+  toxicity: moderate
+  energy_consumption: 6.0 # kWh/kg
+  tags:
+    - спекание
+    - прессование
+    - сложные_детали
+    - материалы_с_особыми_свойствами
+    - sintering
+    - pressing
+    - complex_parts
+    - special_materials
+    - near_net_shape
+
+- name: chemical_vapor_deposition
+  label: "Химическое осаждение из газовой фазы"
+  category: chemical
+  temp_range: [200, 1600] # Celsius, depending on material and CVD type
+  toxicity: high
+  energy_consumption: 5.0 # kWh/kg
+  tags:
+    - тонкие_пленки
+    - покрытия
+    - полупроводники
+    - оптика
+    - surface_coating
+    - thin_films
+    - semiconductors
+    - optics
+
+- name: physical_vapor_deposition
+  label: "Физическое осаждение из газовой фазы"
+  category: thermal
+  temp_range: [50, 1000] # Celsius, substrate temperature
+  toxicity: moderate
+  energy_consumption: 4.5 # kWh/kg
+  tags:
+    - тонкие_пленки
+    - покрытия
+    - декоративные_покрытия
+    - износостойкие_покрытия
+    - surface_coating
+    - thin_films
+    - wear_resistant_coatings
+
+- name: plasma_treatment
+  label: "Плазменная обработка"
+  category: hybrid
+  temp_range: [25, 1000] # Celsius, plasma temperature can be very high
+  toxicity: moderate
+  energy_consumption: 3.0 # kWh/kg
+  tags:
+    - модификация_поверхности
+    - стерилизация
+    - травление
+    - нанесение_покрытий
+    - surface_modification
+    - sterilization
+    - etching
+    - coating
+
+- name: electrochemical_machining
+  label: "Электрохимическая обработка"
+  category: chemical
+  temp_range: [20, 80] # Celsius, electrolyte temperature
+  toxicity: moderate
+  energy_consumption: 6.0 # kWh/kg
+  tags:
+    - обработка_металлов
+    - точная_механика
+    - удаление_материала
+    - surface_finishing
+    - precision_engineering
+    - material_removal
+
+- name: electrical_discharge_machining
+  label: "Электроэрозионная обработка"
+  category: thermal
+  temp_range: [8000, 12000] # Celsius, local temperature at discharge point
+  toxicity: low
+  energy_consumption: 7.0 # kWh/kg
+  tags:
+    - обработка_твердых_сплавов
+    - изготовление_пресс-форм
+    - прецизионная_обработка
+    - hard_alloy_machining
+    - mold_making
+    - precision_machining
+
+- name: additive_manufacturing
+  label: "Аддитивное производство (3D-печать)"
+  category: hybrid
+  temp_range: [60, 2000] # Celsius, depending on technology and material
+  toxicity: moderate
+  energy_consumption: 10.0 # kWh/kg
+  tags:
+    - 3d_печать
+    - прототипирование
+    - кастомизация
+    - сложные_геометрии
+    - rapid_prototyping
+    - customization
+    - complex_geometries
+
+- name: soldering_brazing
+  label: "Пайка"
+  category: thermal
+  temp_range: [180, 1200] # Celsius, melting point of solder
+  toxicity: moderate
+  energy_consumption: 0.2 # kWh/kg
+  tags:
+    - соединение_металлов
+    - электроника
+    - сантехника
+    - ювелирное_дело
+    - joining_metals
+    - electronics
+    - plumbing
+    - jewelry
+
+- name: adhesive_bonding
+  label: "Склеивание"
+  category: chemical
+  temp_range: [20, 200] # Celsius, curing temperature of adhesive
+  toxicity: moderate
+  energy_consumption: 0.1 # kWh/kg
+  tags:
+    - соединение_материалов
+    - композиты
+    - деревообработка
+    - автомобилестроение
+    - material_joining
+    - composites
+    - woodworking
+    - automotive
+
+- name: vulcanization
+  label: "Вулканизация"
+  category: chemical
+  temp_range: [100, 200] # Celsius, rubber processing temperature
+  toxicity: moderate
+  energy_consumption: 1.5 # kWh/kg
+  tags:
+    - резина
+    - каучук
+    - шины
+    - эластомеры
+    - rubber
+    - caoutchouc
+    - tires
+    - elastomers
+
+- name: induction_hardening
+  label: "Закалка ТВЧ"
+  category: thermal
+  temp_range: [800, 1000] # Celsius, surface heating temperature
+  toxicity: low
+  energy_consumption: 2.0 # kWh/kg
+  tags:
+    - поверхностное_упрочнение
+    - термообработка
+    - машиностроение
+    - детали_машин
+    - surface_hardening
+    - heat_treatment
+    - machine_building
+    - machine_parts
+
+- name: carburizing
+  label: "Цементация стали"
+  category: chemical
+  temp_range: [850, 950] # Celsius, diffusion saturation temperature
+  toxicity: moderate
+  energy_consumption: 4.0 # kWh/kg
+  tags:
+    - поверхностное_упрочнение
+    - химико-термическая_обработка
+    - износостойкость
+    - surface_hardening
+    - chemo_thermal_treatment
+    - wear_resistance
+
+- name: nitriding
+  label: "Азотирование"
+  category: chemical
+  temp_range: [500, 650] # Celsius, steel surface saturation temperature with nitrogen
+  toxicity: moderate
+  energy_consumption: 3.5 # kWh/kg
+  tags:
+    - поверхностное_упрочнение
+    - коррозионная_стойкость
+    - износостойкость
+    - surface_hardening
+    - corrosion_resistance
+    - wear_resistance
+
+- name: galvanostegy
+  label: "Гальваностегия"
+  category: chemical
+  temp_range: [20, 80] # Celsius, electrolyte temperature for coating
+  toxicity: high
+  energy_consumption: 0.7 # kWh/m^2
+  tags:
+    - нанесение_металлических_покрытий
+    - защита_от_коррозии
+    - декоративные_покрытия
+    - electroplating
+    - metallic_coating
+    - corrosion_protection
+    - decorative_coating
+
+- name: shot_peening
+  label: "Дробеструйная обработка"
+  category: mechanical
+  temp_range: [20, 50] # Celsius, room temperature processing
+  toxicity: low
+  energy_consumption: 0.3 # kWh/kg
+  tags:
+    - упрочнение_поверхности
+    - снятие_напряжений
+    - повышение_усталостной_прочности
+    - surface_hardening
+    - stress_relief
+    - fatigue_strength_improvement
+```

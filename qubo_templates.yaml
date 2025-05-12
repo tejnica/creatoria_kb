@@ -1,0 +1,147 @@
+# qubo_templates.yaml
+# This file contains 10 templates for typical engineering problems formulated as QUBO.
+
+- name: thermal_shield_optimization
+  goal_variables: # Теплопроводность (минимизировать), плотность (минимизировать), стоимость (минимизировать)
+    - "λ"
+    - "ρ"
+    - "cost"
+  constraints:
+    temp_max: ">= 1500" # Максимальная рабочая температура материала должна быть не менее 1500K
+    thickness: "<= 0.05" # Толщина экрана не более 0.05 м
+    toxicity: "<= moderate" # Уровень токсичности материала не выше среднего
+  qubo_variables:
+    - "x_i: 1 если материал i выбран для слоя, 0 иначе"
+    - "y_j: 1 если производственный процесс j выбран, 0 иначе"
+  domain: materials
+
+- name: structural_material_selection
+  goal_variables: # Прочность (максимизировать), плотность (минимизировать), стоимость (минимизировать), усталостная долговечность (максимизировать)
+    - "strength"
+    - "ρ"
+    - "cost"
+    - "fatigue_life"
+  constraints:
+    yield_strength: ">= 300" # Предел текучести не менее 300 МПа
+    corrosion_resistance: "== high" # Высокая коррозионная стойкость
+    manufacturability: "== good" # Хорошая обрабатываемость
+  qubo_variables:
+    - "x_m: 1 если материал m выбран, 0 иначе"
+    - "y_p: 1 если процесс обработки p выбран для материала m, 0 иначе"
+  domain: materials
+
+- name: process_parameter_optimization
+  goal_variables: # Метрика качества (максимизировать), время цикла (минимизировать), энергопотребление (минимизировать)
+    - "quality_metric"
+    - "cycle_time"
+    - "energy_consumption"
+  constraints:
+    defect_rate: "<= 0.01" # Уровень брака не более 1%
+    tool_wear_rate: "<= moderate" # Скорость износа инструмента не выше средней
+    operator_safety: "== high" # Высокий уровень безопасности оператора
+  qubo_variables:
+    - "x_param_value_k: 1 если для параметра k выбрано значение из дискретного набора, 0 иначе"
+    - "y_sequence_s: 1 если выбрана последовательность операций s, 0 иначе"
+  domain: processes
+
+- name: am_topology_optimization
+  goal_variables: # Вес (минимизировать), жесткость (максимизировать), использование материала (минимизировать)
+    - "weight"
+    - "stiffness"
+    - "material_usage"
+  constraints:
+    max_stress: "<= allowable_stress" # Максимальное напряжение не должно превышать допустимое
+    min_feature_size: ">= 0.5" # Минимальный размер элемента не менее 0.5 мм (ограничение 3D-принтера)
+    build_time: "<= 8" # Время печати не более 8 часов
+  qubo_variables:
+    - "x_voxel_ijk: 1 если воксел (i,j,k) является частью детали, 0 иначе"
+    - "y_orientation_o: 1 если выбрана ориентация печати o, 0 иначе"
+  domain: topology
+
+- name: assembly_sequence_planning
+  goal_variables: # Время сборки (минимизировать), количество смен инструмента (минимизировать), оценка эргономики (максимизировать)
+    - "assembly_time"
+    - "tool_changes"
+    - "ergonomics_score"
+  constraints:
+    precedence_constraints_met: "== True" # Все ограничения по очередности операций выполнены
+    stability_at_each_step: "== True" # Устойчивость сборки на каждом шаге
+    accessibility_of_parts: "== True" # Доступность деталей и точек соединения
+  qubo_variables:
+    - "x_ij: 1 если операция i выполняется непосредственно перед операцией j, 0 иначе"
+    - "y_k: 1 если операция k включена в последовательность, 0 иначе"
+  domain: planning
+
+- name: composite_composition_optimization
+  goal_variables: # Прочность на разрыв (максимизировать), ударопрочность (максимизировать), стоимость за кг (минимизировать), плотность (минимизировать)
+    - "tensile_strength"
+    - "impact_resistance"
+    - "cost_per_kg"
+    - "density"
+  constraints:
+    fiber_volume_fraction: "<= 0.6" # Объемная доля волокна не более 60%
+    cure_temperature: "<= 180" # Температура отверждения не выше 180°C
+    shelf_life: ">= 6" # Срок хранения (месяцев) не менее 6
+  qubo_variables:
+    - "x_fiber_type_f: 1 если выбран тип волокна f, 0 иначе"
+    - "y_matrix_type_m: 1 если выбран тип матрицы m, 0 иначе"
+    - "z_additive_a: 1 если добавка a используется, 0 иначе"
+  domain: materials
+
+- name: logistics_route_optimization
+  goal_variables: # Общее расстояние (минимизировать), время доставки (минимизировать), стоимость топлива (минимизировать)
+    - "total_distance"
+    - "delivery_time"
+    - "fuel_cost"
+  constraints:
+    vehicle_capacity_not_exceeded: "== True" # Вместимость транспортного средства не превышена
+    time_windows_respected: "== True" # Временные окна доставки соблюдены
+    max_driving_hours_per_day: "<= 10" # Максимальное время вождения в день не более 10 часов
+  qubo_variables:
+    - "x_ijv: 1 если транспортное средство v едет из точки i в точку j, 0 иначе"
+    - "y_iv: 1 если точка i посещается транспортным средством v, 0 иначе"
+  domain: planning
+
+- name: production_line_configuration
+  goal_variables: # Пропускная способность (максимизировать), капитальные затраты (минимизировать), оценка гибкости (максимизировать)
+    - "throughput"
+    - "capital_cost"
+    - "flexibility_score"
+  constraints:
+    footprint_area: "<= 500" # Площадь производственной линии не более 500 м²
+    automation_level: ">= medium" # Уровень автоматизации не ниже среднего
+    changeover_time: "<= 2" # Время переналадки не более 2 часов
+  qubo_variables:
+    - "x_mk: 1 если машина типа m установлена на станции k, 0 иначе"
+    - "y_s: 1 если выбрана конфигурация линии s, 0 иначе"
+  domain: planning
+
+- name: building_energy_optimization
+  goal_variables: # Потребление энергии (минимизировать), уровень комфорта (максимизировать), эксплуатационные расходы (минимизировать)
+    - "energy_usage"
+    - "comfort_level"
+    - "operational_cost"
+  constraints:
+    internal_temperature_range: "== [20, 24]" # Диапазон внутренней температуры 20-24°C
+    air_quality_index: "<= 50" # Индекс качества воздуха не более 50
+    lighting_level_adequate: "== True" # Достаточный уровень освещенности
+  qubo_variables:
+    - "x_hvac_setpoint_t: 1 если уставка HVAC установлена на температуру t, 0 иначе"
+    - "y_lighting_zone_z_on: 1 если освещение в зоне z включено, 0 иначе"
+    - "w_window_blind_p: 1 если жалюзи на окне установлены в положение p, 0 иначе"
+  domain: planning
+
+- name: maintenance_scheduling
+  goal_variables: # Время безотказной работы оборудования (максимизировать), стоимость обслуживания (минимизировать), риск отказа (минимизировать)
+    - "equipment_uptime"
+    - "maintenance_cost"
+    - "risk_of_failure"
+  constraints:
+    maintenance_window_availability: "== True" # Доступность окна для обслуживания
+    resource_availability_technicians_parts: "== True" # Доступность ресурсов (техники, запчасти)
+    production_schedule_impact: "<= low" # Влияние на производственный график не выше низкого
+  qubo_variables:
+    - "x_et: 1 если оборудование e обслуживается во временном слоте t, 0 иначе"
+    - "y_mtype_e: 1 если для оборудования e выбран тип обслуживания mtype, 0 иначе"
+  domain: planning
+

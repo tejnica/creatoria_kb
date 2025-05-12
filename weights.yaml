@@ -1,0 +1,48 @@
+# weights.yaml
+# This file contains 5 profiles of priorities for engineering tasks.
+
+mass_critical:
+  description: "Оптимизация для авиации, когда масса критична"
+  weights:
+    λ: 1.0
+    ρ: 3.0
+    cost: 1.5
+    toxicity: 1.0
+    robustness: 2.0
+
+cost_sensitive:
+  description: "Оптимизация для массового производства, где стоимость является главным приоритетом"
+  weights:
+    λ: 1.0
+    ρ: 1.0
+    cost: 3.0
+    toxicity: 1.5
+    robustness: 1.0
+
+safety_first:
+  description: "Оптимизация для приложений, где безопасность и низкая токсичность являются первостепенными (например, медицинское оборудование)"
+  weights:
+    λ: 1.0
+    ρ: 1.0
+    cost: 1.0
+    toxicity: 3.0
+    robustness: 2.5
+
+performance_driven:
+  description: "Оптимизация для высокопроизводительных приложений, где тепловые и механические свойства (например, λ и robustness) имеют высший приоритет"
+  weights:
+    λ: 3.0
+    ρ: 1.5
+    cost: 1.0
+    toxicity: 1.0
+    robustness: 3.0
+
+eco_friendly:
+  description: "Оптимизация с упором на минимизацию воздействия на окружающую среду (низкая токсичность, возможность переработки - косвенно через стоимость и тип материалов)"
+  weights:
+    λ: 1.0
+    ρ: 1.5
+    cost: 2.0
+    toxicity: 3.0
+    robustness: 1.5
+
