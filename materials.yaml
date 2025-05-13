@@ -7,7 +7,10 @@ materials:
     temp_max: 4000
     toxicity: low
     cost: 250
-    tags: [aerospace, 2D, high_temp]
+    tags:
+    - aerospace
+    - 2D
+    - high_temp
   material_002:
     label: Engineered Material 002
     category: ceramic
@@ -16,8 +19,9 @@ materials:
     temp_max: 1500
     toxicity: low
     cost: 50
-    tags: [insulation, high_temp]
-  # ... (97 more materials with similar structure)
+    tags:
+    - insulation
+    - high_temp
   material_100:
     label: Engineered Material 100
     category: polymer
@@ -26,4 +30,1606 @@ materials:
     temp_max: 350
     toxicity: moderate
     cost: 20
-    tags: [lightweight, flexible]
+    tags:
+    - lightweight
+    - flexible
+  strength_material_004:
+    label: High-Strength Material 004
+    category: ceramic
+    λ: 54.86
+    ρ: 4581.77
+    temp_max: 2102
+    toxicity: moderate
+    cost: 561.48
+    tags:
+    - ceramic
+    - high_stiffness
+    - high_tensile_strength
+    - machine_tool
+    - strength_focused
+  strength_material_005:
+    label: High-Strength Material 005
+    category: hybrid
+    λ: 1.41
+    ρ: 2120.16
+    temp_max: 440
+    toxicity: high
+    cost: 90.08
+    tags:
+    - fatigue_resistant
+    - fracture_toughness
+    - hybrid
+    - lightweight
+    - protective_gear
+    - strength_focused
+  strength_material_006:
+    label: High-Strength Material 006
+    category: composite
+    λ: 158.4
+    ρ: 5315.57
+    temp_max: 992
+    toxicity: moderate
+    cost: 308.71
+    tags:
+    - composite
+    - engineering_polymer
+    - fatigue_resistant
+    - high_compressive_strength
+    - machine_tool
+    - modern_material
+    - strength_focused
+  strength_material_007:
+    label: High-Strength Material 007
+    category: metal
+    λ: 363.06
+    ρ: 7817.35
+    temp_max: 788
+    toxicity: high
+    cost: 105.86
+    tags:
+    - aerospace_structure
+    - fastener
+    - fatigue_resistant
+    - impact_resistant
+    - metal
+    - modern_material
+    - strength_focused
+  strength_material_008:
+    label: High-Strength Material 008
+    category: composite
+    λ: 371.89
+    ρ: 4832.64
+    temp_max: 783
+    toxicity: low
+    cost: 100.29
+    tags:
+    - advanced_alloy
+    - aerospace_structure
+    - composite
+    - engineering_polymer
+    - fatigue_resistant
+    - modern_material
+    - strength_focused
+    - structural_component
+  strength_material_009:
+    label: High-Strength Material 009
+    category: ceramic
+    λ: 47.71
+    ρ: 5135.94
+    temp_max: 2280
+    toxicity: low
+    cost: 744.0
+    tags:
+    - advanced_alloy
+    - aerospace_structure
+    - ceramic
+    - fracture_toughness
+    - high_stiffness
+    - machine_tool
+    - strength_focused
+  strength_material_010:
+    label: High-Strength Material 010
+    category: polymer
+    λ: 0.24
+    ρ: 1532.1
+    temp_max: 415
+    toxicity: moderate
+    cost: 7.53
+    tags:
+    - advanced_alloy
+    - fastener
+    - high_stiffness
+    - impact_resistant
+    - lightweight
+    - polymer
+    - strength_focused
+  strength_material_011:
+    label: High-Strength Material 011
+    category: hybrid
+    λ: 1.76
+    ρ: 1748.41
+    temp_max: 344
+    toxicity: high
+    cost: 29.53
+    tags:
+    - corrosion_resistant
+    - high_tensile_strength
+    - hybrid
+    - protective_gear
+    - strength_focused
+  strength_material_012:
+    label: High-Strength Material 012
+    category: polymer
+    λ: 1.02
+    ρ: 1422.13
+    temp_max: 548
+    toxicity: high
+    cost: 63.06
+    tags:
+    - advanced_alloy
+    - aerospace_structure
+    - engineering_polymer
+    - impact_resistant
+    - lightweight
+    - machine_tool
+    - polymer
+    - strength_focused
+    - wear_resistant
+  strength_material_013:
+    label: High-Strength Material 013
+    category: hybrid
+    λ: 1.82
+    ρ: 1819.69
+    temp_max: 339
+    toxicity: low
+    cost: 68.58
+    tags:
+    - advanced_alloy
+    - aerospace_structure
+    - automotive_part
+    - fatigue_resistant
+    - fracture_toughness
+    - hybrid
+    - modern_material
+    - strength_focused
+  strength_material_014:
+    label: High-Strength Material 014
+    category: polymer
+    λ: 1.62
+    ρ: 1933.08
+    temp_max: 403
+    toxicity: high
+    cost: 75.23
+    tags:
+    - corrosion_resistant
+    - engineering_polymer
+    - fracture_toughness
+    - polymer
+    - strength_focused
+    - structural_component
+  strength_material_015:
+    label: High-Strength Material 015
+    category: polymer
+    λ: 1.18
+    ρ: 1889.22
+    temp_max: 443
+    toxicity: low
+    cost: 26.57
+    tags:
+    - bearing
+    - high_tensile_strength
+    - impact_resistant
+    - modern_material
+    - polymer
+    - strength_focused
+  strength_material_016:
+    label: High-Strength Material 016
+    category: composite
+    λ: 365.85
+    ρ: 5100.35
+    temp_max: 1825
+    toxicity: low
+    cost: 308.61
+    tags:
+    - composite
+    - corrosion_resistant
+    - high_tensile_strength
+    - lightweight
+    - modern_material
+    - protective_gear
+    - strength_focused
+    - structural_component
+    - wear_resistant
+  strength_material_017:
+    label: High-Strength Material 017
+    category: hybrid
+    λ: 0.45
+    ρ: 1800.62
+    temp_max: 337
+    toxicity: moderate
+    cost: 71.79
+    tags:
+    - advanced_alloy
+    - fastener
+    - high_compressive_strength
+    - hybrid
+    - impact_resistant
+    - lightweight
+    - modern_material
+    - strength_focused
+  strength_material_018:
+    label: High-Strength Material 018
+    category: composite
+    λ: 354.11
+    ρ: 5171.69
+    temp_max: 1685
+    toxicity: moderate
+    cost: 304.66
+    tags:
+    - composite
+    - corrosion_resistant
+    - fracture_toughness
+    - high_tensile_strength
+    - protective_gear
+    - strength_focused
+    - structural_component
+  strength_material_019:
+    label: High-Strength Material 019
+    category: hybrid
+    λ: 0.88
+    ρ: 1504.16
+    temp_max: 574
+    toxicity: moderate
+    cost: 87.76
+    tags:
+    - high_tensile_strength
+    - hybrid
+    - impact_resistant
+    - lightweight
+    - protective_gear
+    - strength_focused
+    - structural_component
+  strength_material_020:
+    label: High-Strength Material 020
+    category: polymer
+    λ: 1.68
+    ρ: 1340.58
+    temp_max: 485
+    toxicity: high
+    cost: 12.17
+    tags:
+    - advanced_alloy
+    - corrosion_resistant
+    - engineering_polymer
+    - high_tensile_strength
+    - machine_tool
+    - polymer
+    - strength_focused
+    - wear_resistant
+  strength_material_021:
+    label: High-Strength Material 021
+    category: metal
+    λ: 313.81
+    ρ: 3019.84
+    temp_max: 1015
+    toxicity: high
+    cost: 36.44
+    tags:
+    - automotive_part
+    - corrosion_resistant
+    - high_compressive_strength
+    - high_stiffness
+    - impact_resistant
+    - machine_tool
+    - metal
+    - strength_focused
+  strength_material_022:
+    label: High-Strength Material 022
+    category: ceramic
+    λ: 47.49
+    ρ: 5056.41
+    temp_max: 2257
+    toxicity: high
+    cost: 293.66
+    tags:
+    - ceramic
+    - fastener
+    - high_compressive_strength
+    - modern_material
+    - strength_focused
+  strength_material_023:
+    label: High-Strength Material 023
+    category: ceramic
+    λ: 30.27
+    ρ: 4496.09
+    temp_max: 1415
+    toxicity: low
+    cost: 751.22
+    tags:
+    - ceramic
+    - engineering_polymer
+    - high_compressive_strength
+    - impact_resistant
+    - lightweight
+    - protective_gear
+    - strength_focused
+    - structural_component
+  strength_material_024:
+    label: High-Strength Material 024
+    category: hybrid
+    λ: 1.82
+    ρ: 1896.97
+    temp_max: 380
+    toxicity: high
+    cost: 10.3
+    tags:
+    - advanced_alloy
+    - automotive_part
+    - high_tensile_strength
+    - hybrid
+    - impact_resistant
+    - strength_focused
+  strength_material_025:
+    label: High-Strength Material 025
+    category: polymer
+    λ: 0.93
+    ρ: 1147.35
+    temp_max: 370
+    toxicity: low
+    cost: 19.25
+    tags:
+    - corrosion_resistant
+    - high_tensile_strength
+    - polymer
+    - protective_gear
+    - strength_focused
+    - wear_resistant
+  strength_material_026:
+    label: High-Strength Material 026
+    category: metal
+    λ: 174.99
+    ρ: 7481.38
+    temp_max: 1713
+    toxicity: moderate
+    cost: 189.88
+    tags:
+    - bearing
+    - engineering_polymer
+    - high_compressive_strength
+    - high_stiffness
+    - impact_resistant
+    - metal
+    - strength_focused
+  strength_material_027:
+    label: High-Strength Material 027
+    category: ceramic
+    λ: 27.54
+    ρ: 4352.47
+    temp_max: 2756
+    toxicity: high
+    cost: 94.36
+    tags:
+    - aerospace_structure
+    - ceramic
+    - corrosion_resistant
+    - fatigue_resistant
+    - high_stiffness
+    - strength_focused
+  strength_material_028:
+    label: High-Strength Material 028
+    category: composite
+    λ: 223.95
+    ρ: 4194.93
+    temp_max: 463
+    toxicity: moderate
+    cost: 294.72
+    tags:
+    - composite
+    - corrosion_resistant
+    - fracture_toughness
+    - lightweight
+    - machine_tool
+    - protective_gear
+    - strength_focused
+  strength_material_029:
+    label: High-Strength Material 029
+    category: metal
+    λ: 105.31
+    ρ: 6604.84
+    temp_max: 1105
+    toxicity: high
+    cost: 12.89
+    tags:
+    - engineering_polymer
+    - fracture_toughness
+    - high_compressive_strength
+    - metal
+    - protective_gear
+    - strength_focused
+  strength_material_030:
+    label: High-Strength Material 030
+    category: composite
+    λ: 166.83
+    ρ: 5152.99
+    temp_max: 452
+    toxicity: low
+    cost: 447.26
+    tags:
+    - composite
+    - construction_beam
+    - corrosion_resistant
+    - fracture_toughness
+    - high_stiffness
+    - high_tensile_strength
+    - lightweight
+    - strength_focused
+  strength_material_031:
+    label: High-Strength Material 031
+    category: composite
+    λ: 359.89
+    ρ: 7429.5
+    temp_max: 1405
+    toxicity: high
+    cost: 285.08
+    tags:
+    - composite
+    - construction_beam
+    - engineering_polymer
+    - fatigue_resistant
+    - lightweight
+    - machine_tool
+    - modern_material
+    - strength_focused
+  strength_material_032:
+    label: High-Strength Material 032
+    category: ceramic
+    λ: 20.23
+    ρ: 4368.12
+    temp_max: 2324
+    toxicity: high
+    cost: 433.83
+    tags:
+    - ceramic
+    - construction_beam
+    - high_tensile_strength
+    - machine_tool
+    - modern_material
+    - strength_focused
+  strength_material_033:
+    label: High-Strength Material 033
+    category: polymer
+    λ: 1.25
+    ρ: 1816.31
+    temp_max: 464
+    toxicity: moderate
+    cost: 20.75
+    tags:
+    - advanced_alloy
+    - high_stiffness
+    - polymer
+    - strength_focused
+    - structural_component
+    - wear_resistant
+  strength_material_034:
+    label: High-Strength Material 034
+    category: metal
+    λ: 106.52
+    ρ: 7976.92
+    temp_max: 1494
+    toxicity: moderate
+    cost: 499.83
+    tags:
+    - aerospace_structure
+    - fastener
+    - high_compressive_strength
+    - high_stiffness
+    - metal
+    - modern_material
+    - strength_focused
+  strength_material_035:
+    label: High-Strength Material 035
+    category: metal
+    λ: 289.65
+    ρ: 3391.69
+    temp_max: 1732
+    toxicity: low
+    cost: 496.31
+    tags:
+    - construction_beam
+    - fatigue_resistant
+    - high_stiffness
+    - lightweight
+    - metal
+    - protective_gear
+    - strength_focused
+  strength_material_036:
+    label: High-Strength Material 036
+    category: hybrid
+    λ: 0.5
+    ρ: 1775.99
+    temp_max: 555
+    toxicity: low
+    cost: 4.24
+    tags:
+    - advanced_alloy
+    - engineering_polymer
+    - fastener
+    - high_tensile_strength
+    - hybrid
+    - impact_resistant
+    - lightweight
+    - strength_focused
+  strength_material_037:
+    label: High-Strength Material 037
+    category: polymer
+    λ: 1.05
+    ρ: 1716.34
+    temp_max: 394
+    toxicity: high
+    cost: 4.45
+    tags:
+    - advanced_alloy
+    - corrosion_resistant
+    - fracture_toughness
+    - machine_tool
+    - polymer
+    - strength_focused
+    - wear_resistant
+  strength_material_038:
+    label: High-Strength Material 038
+    category: metal
+    λ: 263.19
+    ρ: 3319.99
+    temp_max: 692
+    toxicity: moderate
+    cost: 238.12
+    tags:
+    - fastener
+    - fatigue_resistant
+    - high_tensile_strength
+    - lightweight
+    - metal
+    - strength_focused
+  strength_material_039:
+    label: High-Strength Material 039
+    category: composite
+    λ: 192.57
+    ρ: 7449.72
+    temp_max: 1205
+    toxicity: moderate
+    cost: 496.77
+    tags:
+    - advanced_alloy
+    - composite
+    - fastener
+    - high_tensile_strength
+    - machine_tool
+    - strength_focused
+  strength_material_040:
+    label: High-Strength Material 040
+    category: ceramic
+    λ: 70.88
+    ρ: 3982.72
+    temp_max: 2527
+    toxicity: low
+    cost: 852.01
+    tags:
+    - advanced_alloy
+    - aerospace_structure
+    - ceramic
+    - engineering_polymer
+    - impact_resistant
+    - modern_material
+    - strength_focused
+    - structural_component
+    - wear_resistant
+  strength_material_041:
+    label: High-Strength Material 041
+    category: metal
+    λ: 214.63
+    ρ: 5966.02
+    temp_max: 1494
+    toxicity: moderate
+    cost: 97.04
+    tags:
+    - automotive_part
+    - corrosion_resistant
+    - high_tensile_strength
+    - metal
+    - strength_focused
+  strength_material_042:
+    label: High-Strength Material 042
+    category: composite
+    λ: 90.62
+    ρ: 7588.87
+    temp_max: 1723
+    toxicity: low
+    cost: 104.71
+    tags:
+    - composite
+    - corrosion_resistant
+    - fatigue_resistant
+    - fracture_toughness
+    - high_stiffness
+    - machine_tool
+    - strength_focused
+  strength_material_043:
+    label: High-Strength Material 043
+    category: metal
+    λ: 181.33
+    ρ: 5636.59
+    temp_max: 704
+    toxicity: high
+    cost: 379.0
+    tags:
+    - fastener
+    - fracture_toughness
+    - high_compressive_strength
+    - high_stiffness
+    - metal
+    - modern_material
+    - protective_gear
+    - strength_focused
+  strength_material_044:
+    label: High-Strength Material 044
+    category: composite
+    λ: 175.73
+    ρ: 3356.07
+    temp_max: 1041
+    toxicity: high
+    cost: 211.29
+    tags:
+    - advanced_alloy
+    - composite
+    - construction_beam
+    - corrosion_resistant
+    - engineering_polymer
+    - fracture_toughness
+    - impact_resistant
+    - strength_focused
+  strength_material_045:
+    label: High-Strength Material 045
+    category: hybrid
+    λ: 1.14
+    ρ: 1198.77
+    temp_max: 454
+    toxicity: high
+    cost: 63.83
+    tags:
+    - advanced_alloy
+    - automotive_part
+    - corrosion_resistant
+    - fatigue_resistant
+    - hybrid
+    - lightweight
+    - strength_focused
+    - structural_component
+  strength_material_046:
+    label: High-Strength Material 046
+    category: polymer
+    λ: 0.4
+    ρ: 1482.58
+    temp_max: 509
+    toxicity: low
+    cost: 9.26
+    tags:
+    - construction_beam
+    - corrosion_resistant
+    - fastener
+    - high_tensile_strength
+    - impact_resistant
+    - modern_material
+    - polymer
+    - strength_focused
+  strength_material_047:
+    label: High-Strength Material 047
+    category: polymer
+    λ: 1.73
+    ρ: 1334.94
+    temp_max: 491
+    toxicity: low
+    cost: 65.93
+    tags:
+    - corrosion_resistant
+    - engineering_polymer
+    - high_compressive_strength
+    - modern_material
+    - polymer
+    - protective_gear
+    - strength_focused
+    - structural_component
+  strength_material_048:
+    label: High-Strength Material 048
+    category: polymer
+    λ: 0.53
+    ρ: 1520.26
+    temp_max: 329
+    toxicity: moderate
+    cost: 70.74
+    tags:
+    - construction_beam
+    - high_compressive_strength
+    - lightweight
+    - machine_tool
+    - polymer
+    - strength_focused
+  strength_material_049:
+    label: High-Strength Material 049
+    category: composite
+    λ: 381.87
+    ρ: 6772.02
+    temp_max: 604
+    toxicity: high
+    cost: 186.83
+    tags:
+    - composite
+    - fatigue_resistant
+    - high_tensile_strength
+    - machine_tool
+    - modern_material
+    - strength_focused
+  strength_material_050:
+    label: High-Strength Material 050
+    category: metal
+    λ: 244.02
+    ρ: 3863.68
+    temp_max: 426
+    toxicity: moderate
+    cost: 138.45
+    tags:
+    - advanced_alloy
+    - automotive_part
+    - corrosion_resistant
+    - fracture_toughness
+    - machine_tool
+    - metal
+    - modern_material
+    - strength_focused
+    - wear_resistant
+  strength_material_051:
+    label: High-Strength Material 051
+    category: composite
+    λ: 262.76
+    ρ: 5399.27
+    temp_max: 1118
+    toxicity: low
+    cost: 59.35
+    tags:
+    - automotive_part
+    - composite
+    - corrosion_resistant
+    - engineering_polymer
+    - fatigue_resistant
+    - high_tensile_strength
+    - strength_focused
+  strength_material_052:
+    label: High-Strength Material 052
+    category: composite
+    λ: 129.03
+    ρ: 2399.38
+    temp_max: 408
+    toxicity: low
+    cost: 300.96
+    tags:
+    - advanced_alloy
+    - composite
+    - engineering_polymer
+    - high_compressive_strength
+    - impact_resistant
+    - modern_material
+    - protective_gear
+    - strength_focused
+  strength_material_053:
+    label: High-Strength Material 053
+    category: hybrid
+    λ: 1.77
+    ρ: 1511.44
+    temp_max: 362
+    toxicity: high
+    cost: 24.53
+    tags:
+    - high_compressive_strength
+    - high_tensile_strength
+    - hybrid
+    - lightweight
+    - strength_focused
+    - structural_component
+  strength_material_054:
+    label: High-Strength Material 054
+    category: composite
+    λ: 319.61
+    ρ: 7569.56
+    temp_max: 1390
+    toxicity: high
+    cost: 359.55
+    tags:
+    - automotive_part
+    - composite
+    - construction_beam
+    - impact_resistant
+    - lightweight
+    - strength_focused
+    - wear_resistant
+  strength_material_055:
+    label: High-Strength Material 055
+    category: hybrid
+    λ: 1.06
+    ρ: 1848.65
+    temp_max: 531
+    toxicity: moderate
+    cost: 15.4
+    tags:
+    - advanced_alloy
+    - bearing
+    - corrosion_resistant
+    - engineering_polymer
+    - fracture_toughness
+    - hybrid
+    - strength_focused
+  strength_material_056:
+    label: High-Strength Material 056
+    category: polymer
+    λ: 1.8
+    ρ: 2180.22
+    temp_max: 509
+    toxicity: moderate
+    cost: 9.69
+    tags:
+    - advanced_alloy
+    - high_compressive_strength
+    - high_stiffness
+    - high_tensile_strength
+    - lightweight
+    - polymer
+    - protective_gear
+    - strength_focused
+  strength_material_057:
+    label: High-Strength Material 057
+    category: polymer
+    λ: 0.45
+    ρ: 1834.59
+    temp_max: 466
+    toxicity: high
+    cost: 83.66
+    tags:
+    - aerospace_structure
+    - fastener
+    - fatigue_resistant
+    - impact_resistant
+    - lightweight
+    - polymer
+    - strength_focused
+  strength_material_058:
+    label: High-Strength Material 058
+    category: ceramic
+    λ: 5.35
+    ρ: 4249.78
+    temp_max: 1887
+    toxicity: moderate
+    cost: 202.31
+    tags:
+    - ceramic
+    - corrosion_resistant
+    - engineering_polymer
+    - fracture_toughness
+    - high_compressive_strength
+    - high_stiffness
+    - strength_focused
+    - structural_component
+  strength_material_059:
+    label: High-Strength Material 059
+    category: ceramic
+    λ: 36.37
+    ρ: 4555.4
+    temp_max: 2849
+    toxicity: moderate
+    cost: 508.98
+    tags:
+    - advanced_alloy
+    - automotive_part
+    - ceramic
+    - construction_beam
+    - high_compressive_strength
+    - high_stiffness
+    - strength_focused
+  strength_material_060:
+    label: High-Strength Material 060
+    category: polymer
+    λ: 0.42
+    ρ: 1873.68
+    temp_max: 534
+    toxicity: high
+    cost: 91.48
+    tags:
+    - advanced_alloy
+    - bearing
+    - corrosion_resistant
+    - engineering_polymer
+    - high_tensile_strength
+    - polymer
+    - strength_focused
+  strength_material_061:
+    label: High-Strength Material 061
+    category: composite
+    λ: 94.31
+    ρ: 6207.77
+    temp_max: 1726
+    toxicity: high
+    cost: 117.01
+    tags:
+    - advanced_alloy
+    - bearing
+    - composite
+    - construction_beam
+    - high_stiffness
+    - high_tensile_strength
+    - impact_resistant
+    - strength_focused
+  strength_material_062:
+    label: High-Strength Material 062
+    category: ceramic
+    λ: 69.72
+    ρ: 4800.52
+    temp_max: 1013
+    toxicity: high
+    cost: 819.73
+    tags:
+    - bearing
+    - ceramic
+    - corrosion_resistant
+    - fastener
+    - fatigue_resistant
+    - fracture_toughness
+    - high_stiffness
+    - strength_focused
+  strength_material_063:
+    label: High-Strength Material 063
+    category: hybrid
+    λ: 1.69
+    ρ: 1838.6
+    temp_max: 548
+    toxicity: moderate
+    cost: 69.69
+    tags:
+    - aerospace_structure
+    - engineering_polymer
+    - high_stiffness
+    - high_tensile_strength
+    - hybrid
+    - protective_gear
+    - strength_focused
+  strength_material_064:
+    label: High-Strength Material 064
+    category: polymer
+    λ: 1.08
+    ρ: 999.96
+    temp_max: 519
+    toxicity: high
+    cost: 5.48
+    tags:
+    - automotive_part
+    - corrosion_resistant
+    - fatigue_resistant
+    - polymer
+    - protective_gear
+    - strength_focused
+  strength_material_065:
+    label: High-Strength Material 065
+    category: ceramic
+    λ: 38.83
+    ρ: 3581.56
+    temp_max: 1582
+    toxicity: low
+    cost: 387.0
+    tags:
+    - automotive_part
+    - ceramic
+    - fastener
+    - high_compressive_strength
+    - high_stiffness
+    - strength_focused
+  strength_material_066:
+    label: High-Strength Material 066
+    category: composite
+    λ: 225.67
+    ρ: 6486.71
+    temp_max: 811
+    toxicity: moderate
+    cost: 33.16
+    tags:
+    - automotive_part
+    - composite
+    - engineering_polymer
+    - fracture_toughness
+    - high_stiffness
+    - machine_tool
+    - strength_focused
+  strength_material_067:
+    label: High-Strength Material 067
+    category: metal
+    λ: 236.38
+    ρ: 4760.66
+    temp_max: 996
+    toxicity: high
+    cost: 180.81
+    tags:
+    - engineering_polymer
+    - high_compressive_strength
+    - impact_resistant
+    - machine_tool
+    - metal
+    - strength_focused
+  strength_material_068:
+    label: High-Strength Material 068
+    category: ceramic
+    λ: 81.33
+    ρ: 5061.34
+    temp_max: 1960
+    toxicity: high
+    cost: 925.76
+    tags:
+    - automotive_part
+    - ceramic
+    - construction_beam
+    - high_stiffness
+    - high_tensile_strength
+    - strength_focused
+  strength_material_069:
+    label: High-Strength Material 069
+    category: polymer
+    λ: 1.05
+    ρ: 1407.69
+    temp_max: 499
+    toxicity: high
+    cost: 27.45
+    tags:
+    - automotive_part
+    - fastener
+    - fatigue_resistant
+    - high_compressive_strength
+    - high_stiffness
+    - modern_material
+    - polymer
+    - strength_focused
+  strength_material_070:
+    label: High-Strength Material 070
+    category: metal
+    λ: 386.25
+    ρ: 7551.89
+    temp_max: 1516
+    toxicity: moderate
+    cost: 69.91
+    tags:
+    - aerospace_structure
+    - construction_beam
+    - corrosion_resistant
+    - fatigue_resistant
+    - fracture_toughness
+    - metal
+    - strength_focused
+  strength_material_071:
+    label: High-Strength Material 071
+    category: polymer
+    λ: 1.59
+    ρ: 1453.28
+    temp_max: 567
+    toxicity: low
+    cost: 13.26
+    tags:
+    - advanced_alloy
+    - engineering_polymer
+    - fracture_toughness
+    - high_compressive_strength
+    - polymer
+    - protective_gear
+    - strength_focused
+    - structural_component
+  strength_material_072:
+    label: High-Strength Material 072
+    category: polymer
+    λ: 0.21
+    ρ: 939.46
+    temp_max: 433
+    toxicity: low
+    cost: 95.65
+    tags:
+    - bearing
+    - lightweight
+    - polymer
+    - strength_focused
+    - wear_resistant
+  strength_material_073:
+    label: High-Strength Material 073
+    category: hybrid
+    λ: 0.92
+    ρ: 2082.41
+    temp_max: 545
+    toxicity: moderate
+    cost: 17.77
+    tags:
+    - construction_beam
+    - corrosion_resistant
+    - fatigue_resistant
+    - high_stiffness
+    - high_tensile_strength
+    - hybrid
+    - strength_focused
+  strength_material_074:
+    label: High-Strength Material 074
+    category: composite
+    λ: 174.16
+    ρ: 5203.18
+    temp_max: 684
+    toxicity: low
+    cost: 314.65
+    tags:
+    - composite
+    - fracture_toughness
+    - high_tensile_strength
+    - lightweight
+    - modern_material
+    - protective_gear
+    - strength_focused
+  strength_material_075:
+    label: High-Strength Material 075
+    category: composite
+    λ: 336.36
+    ρ: 4593.67
+    temp_max: 1895
+    toxicity: high
+    cost: 170.83
+    tags:
+    - automotive_part
+    - composite
+    - high_stiffness
+    - impact_resistant
+    - machine_tool
+    - modern_material
+    - strength_focused
+  strength_material_076:
+    label: High-Strength Material 076
+    category: hybrid
+    λ: 0.54
+    ρ: 1356.38
+    temp_max: 396
+    toxicity: moderate
+    cost: 60.9
+    tags:
+    - engineering_polymer
+    - fastener
+    - fatigue_resistant
+    - high_compressive_strength
+    - hybrid
+    - strength_focused
+  strength_material_077:
+    label: High-Strength Material 077
+    category: hybrid
+    λ: 0.64
+    ρ: 1296.38
+    temp_max: 545
+    toxicity: low
+    cost: 23.74
+    tags:
+    - advanced_alloy
+    - fastener
+    - hybrid
+    - impact_resistant
+    - strength_focused
+  strength_material_078:
+    label: High-Strength Material 078
+    category: ceramic
+    λ: 49.15
+    ρ: 5150.3
+    temp_max: 2331
+    toxicity: low
+    cost: 884.31
+    tags:
+    - bearing
+    - ceramic
+    - engineering_polymer
+    - fastener
+    - high_stiffness
+    - high_tensile_strength
+    - impact_resistant
+    - strength_focused
+  strength_material_079:
+    label: High-Strength Material 079
+    category: ceramic
+    λ: 84.15
+    ρ: 2789.73
+    temp_max: 2546
+    toxicity: high
+    cost: 600.91
+    tags:
+    - advanced_alloy
+    - ceramic
+    - construction_beam
+    - high_compressive_strength
+    - lightweight
+    - strength_focused
+    - structural_component
+  strength_material_080:
+    label: High-Strength Material 080
+    category: composite
+    λ: 148.21
+    ρ: 5230.98
+    temp_max: 1714
+    toxicity: high
+    cost: 385.58
+    tags:
+    - advanced_alloy
+    - bearing
+    - composite
+    - modern_material
+    - strength_focused
+    - wear_resistant
+  strength_material_081:
+    label: High-Strength Material 081
+    category: metal
+    λ: 146.63
+    ρ: 3598.92
+    temp_max: 741
+    toxicity: moderate
+    cost: 409.22
+    tags:
+    - high_compressive_strength
+    - impact_resistant
+    - metal
+    - modern_material
+    - strength_focused
+    - structural_component
+  strength_material_082:
+    label: High-Strength Material 082
+    category: hybrid
+    λ: 0.36
+    ρ: 1583.5
+    temp_max: 333
+    toxicity: high
+    cost: 79.56
+    tags:
+    - advanced_alloy
+    - fastener
+    - high_compressive_strength
+    - hybrid
+    - lightweight
+    - protective_gear
+    - strength_focused
+  strength_material_083:
+    label: High-Strength Material 083
+    category: composite
+    λ: 126.62
+    ρ: 7290.34
+    temp_max: 744
+    toxicity: moderate
+    cost: 488.94
+    tags:
+    - advanced_alloy
+    - composite
+    - construction_beam
+    - corrosion_resistant
+    - impact_resistant
+    - protective_gear
+    - strength_focused
+  strength_material_084:
+    label: High-Strength Material 084
+    category: hybrid
+    λ: 0.83
+    ρ: 1458.88
+    temp_max: 592
+    toxicity: high
+    cost: 88.92
+    tags:
+    - automotive_part
+    - high_compressive_strength
+    - hybrid
+    - modern_material
+    - strength_focused
+  strength_material_085:
+    label: High-Strength Material 085
+    category: composite
+    λ: 359.37
+    ρ: 3368.99
+    temp_max: 1598
+    toxicity: high
+    cost: 93.3
+    tags:
+    - advanced_alloy
+    - composite
+    - construction_beam
+    - high_tensile_strength
+    - impact_resistant
+    - lightweight
+    - strength_focused
+  strength_material_086:
+    label: High-Strength Material 086
+    category: ceramic
+    λ: 8.47
+    ρ: 5277.61
+    temp_max: 1942
+    toxicity: moderate
+    cost: 349.46
+    tags:
+    - advanced_alloy
+    - ceramic
+    - fastener
+    - fatigue_resistant
+    - fracture_toughness
+    - strength_focused
+  strength_material_087:
+    label: High-Strength Material 087
+    category: metal
+    λ: 277.24
+    ρ: 3368.13
+    temp_max: 1179
+    toxicity: high
+    cost: 85.81
+    tags:
+    - advanced_alloy
+    - automotive_part
+    - high_compressive_strength
+    - lightweight
+    - metal
+    - strength_focused
+    - wear_resistant
+  strength_material_088:
+    label: High-Strength Material 088
+    category: hybrid
+    λ: 1.74
+    ρ: 1515.08
+    temp_max: 441
+    toxicity: moderate
+    cost: 93.23
+    tags:
+    - automotive_part
+    - bearing
+    - corrosion_resistant
+    - high_stiffness
+    - high_tensile_strength
+    - hybrid
+    - modern_material
+    - strength_focused
+  strength_material_089:
+    label: High-Strength Material 089
+    category: metal
+    λ: 133.75
+    ρ: 5957.61
+    temp_max: 887
+    toxicity: high
+    cost: 303.5
+    tags:
+    - advanced_alloy
+    - high_stiffness
+    - impact_resistant
+    - lightweight
+    - metal
+    - strength_focused
+    - structural_component
+  strength_material_090:
+    label: High-Strength Material 090
+    category: hybrid
+    λ: 0.76
+    ρ: 2121.69
+    temp_max: 519
+    toxicity: low
+    cost: 53.15
+    tags:
+    - construction_beam
+    - fatigue_resistant
+    - hybrid
+    - impact_resistant
+    - lightweight
+    - modern_material
+    - strength_focused
+  strength_material_091:
+    label: High-Strength Material 091
+    category: ceramic
+    λ: 50.4
+    ρ: 3428.59
+    temp_max: 1970
+    toxicity: low
+    cost: 477.09
+    tags:
+    - advanced_alloy
+    - ceramic
+    - high_compressive_strength
+    - high_stiffness
+    - lightweight
+    - machine_tool
+    - strength_focused
+    - wear_resistant
+  strength_material_092:
+    label: High-Strength Material 092
+    category: composite
+    λ: 389.88
+    ρ: 6926.73
+    temp_max: 1511
+    toxicity: low
+    cost: 257.45
+    tags:
+    - bearing
+    - composite
+    - high_compressive_strength
+    - high_tensile_strength
+    - lightweight
+    - modern_material
+    - strength_focused
+  strength_material_093:
+    label: High-Strength Material 093
+    category: hybrid
+    λ: 0.64
+    ρ: 2006.5
+    temp_max: 366
+    toxicity: high
+    cost: 93.02
+    tags:
+    - aerospace_structure
+    - construction_beam
+    - corrosion_resistant
+    - high_compressive_strength
+    - hybrid
+    - strength_focused
+  strength_material_094:
+    label: High-Strength Material 094
+    category: metal
+    λ: 279.12
+    ρ: 6688.77
+    temp_max: 1148
+    toxicity: high
+    cost: 207.79
+    tags:
+    - advanced_alloy
+    - corrosion_resistant
+    - fastener
+    - fatigue_resistant
+    - metal
+    - modern_material
+    - strength_focused
+    - structural_component
+    - wear_resistant
+  strength_material_095:
+    label: High-Strength Material 095
+    category: composite
+    λ: 92.47
+    ρ: 2218.02
+    temp_max: 1864
+    toxicity: moderate
+    cost: 138.26
+    tags:
+    - advanced_alloy
+    - aerospace_structure
+    - composite
+    - fatigue_resistant
+    - impact_resistant
+    - strength_focused
+  strength_material_096:
+    label: High-Strength Material 096
+    category: composite
+    λ: 146.63
+    ρ: 5209.87
+    temp_max: 1986
+    toxicity: moderate
+    cost: 484.46
+    tags:
+    - advanced_alloy
+    - composite
+    - construction_beam
+    - engineering_polymer
+    - high_compressive_strength
+    - machine_tool
+    - modern_material
+    - strength_focused
+  strength_material_097:
+    label: High-Strength Material 097
+    category: metal
+    λ: 122.58
+    ρ: 3437.35
+    temp_max: 913
+    toxicity: low
+    cost: 294.03
+    tags:
+    - advanced_alloy
+    - automotive_part
+    - fatigue_resistant
+    - metal
+    - strength_focused
+  strength_material_098:
+    label: High-Strength Material 098
+    category: hybrid
+    λ: 1.15
+    ρ: 1962.44
+    temp_max: 552
+    toxicity: high
+    cost: 74.4
+    tags:
+    - advanced_alloy
+    - construction_beam
+    - engineering_polymer
+    - fatigue_resistant
+    - hybrid
+    - impact_resistant
+    - modern_material
+    - protective_gear
+    - strength_focused
+  strength_material_099:
+    label: High-Strength Material 099
+    category: composite
+    λ: 80.04
+    ρ: 5558.89
+    temp_max: 1985
+    toxicity: high
+    cost: 424.27
+    tags:
+    - bearing
+    - composite
+    - corrosion_resistant
+    - engineering_polymer
+    - high_tensile_strength
+    - impact_resistant
+    - lightweight
+    - strength_focused
+  strength_material_100:
+    label: High-Strength Material 100
+    category: metal
+    λ: 180.05
+    ρ: 6052.97
+    temp_max: 1901
+    toxicity: moderate
+    cost: 429.01
+    tags:
+    - advanced_alloy
+    - engineering_polymer
+    - high_stiffness
+    - high_tensile_strength
+    - metal
+    - protective_gear
+    - strength_focused
+    - wear_resistant
+  strength_material_101:
+    label: High-Strength Material 101
+    category: hybrid
+    λ: 1.95
+    ρ: 1632.7
+    temp_max: 383
+    toxicity: moderate
+    cost: 45.89
+    tags:
+    - automotive_part
+    - high_tensile_strength
+    - hybrid
+    - impact_resistant
+    - lightweight
+    - protective_gear
+    - strength_focused
+  strength_material_102:
+    label: High-Strength Material 102
+    category: polymer
+    λ: 0.83
+    ρ: 2184.46
+    temp_max: 337
+    toxicity: moderate
+    cost: 62.83
+    tags:
+    - automotive_part
+    - engineering_polymer
+    - fatigue_resistant
+    - high_stiffness
+    - high_tensile_strength
+    - lightweight
+    - polymer
+    - strength_focused
+    - structural_component
+  strength_material_103:
+    label: High-Strength Material 103
+    category: hybrid
+    λ: 1.46
+    ρ: 1769.37
+    temp_max: 354
+    toxicity: moderate
+    cost: 18.77
+    tags:
+    - fastener
+    - fatigue_resistant
+    - hybrid
+    - lightweight
+    - modern_material
+    - strength_focused
